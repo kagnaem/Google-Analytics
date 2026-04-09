@@ -51,7 +51,7 @@ These objects were used to structure the temperature data into reusable reportin
 ## Dashboard Views
 
 ### 1. Average Temperature by Year and Country
-![Average Temperature by Year and Country](https://github.com/user-attachments/assets/993afd1a-85b9-4621-9845-cc51d6dfc1fe)
+![Average Temperature by Year and Country](./images/AvgTemp.png)
 
 This dashboard view combines a country comparison bar chart for India, the United States, and the United Kingdom with a long-term average temperature trend line and an average reference line.
 
@@ -63,7 +63,7 @@ This dashboard view combines a country comparison bar chart for India, the Unite
 - The dashboard allows readers to compare both country-level differences and time-based movement in one place.
 
 ### 2. Average Temperature Worldwide
-![Average Temperature Worldwide](https://github.com/user-attachments/assets/d4d903e7-c41c-484d-8f13-45c86a132893)
+![Average Temperature Worldwide](./images/AvgTempMap.png)
 
 This choropleth map shows how average temperature varies across countries worldwide.
 
@@ -74,7 +74,7 @@ This choropleth map shows how average temperature varies across countries worldw
 - The map gives a clear global view of how unevenly average temperature is distributed.
 
 ### 3. Global Temperature Change Within 10 Years
-![Global Temperature Change Within 10 Years](https://github.com/user-attachments/assets/ebef0262-0e3b-45bc-8488-7f853dc64129)
+![Global Temperature Change Within 10 Years](./images/AvgTempMap10Year.png)
 
 This map highlights temperature change by country over the selected 10-year period.
 
@@ -98,6 +98,7 @@ This project demonstrates how cloud-based analytics tools can be combined to mov
 - [README.md](./README.md): project overview, dashboard summary, and key findings
 - [INSIGHTS_REPORT.md](./INSIGHTS_REPORT.md): detailed interpretation of the dashboard results
 - [GlobalTempGSOT.ipynb](./GlobalTempGSOT.ipynb): notebook used to connect to and inspect BigQuery data
+- `images/`: dashboard screenshots used in the README
 
 ## Conclusion
 This project demonstrates an end-to-end analytics workflow using Google BigQuery and Looker Studio. It shows how raw global temperature data can be transformed into reporting-ready tables, visualised through interactive dashboards, and interpreted in a clear portfolio-ready format.
