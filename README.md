@@ -41,6 +41,15 @@ The dashboard is supported by a set of tables and views created in BigQuery to o
 
 These objects were used to structure the temperature data into reusable reporting layers for Looker Studio.
 
+### Included SQL File
+- [qry_DateTime_AvgTemp.sql](./sql/qry_DateTime_AvgTemp.sql)
+
+This query creates a date-based temperature dataset by:
+- calculating average temperature by country and year
+- converting the year into a `DATETIME` field for time-based reporting
+- calculating a baseline temperature by country
+- generating `temp_delta` to compare yearly temperature against the baseline
+
 ## Analytical Workflow
 1. Loaded and explored the temperature dataset in Google BigQuery.
 2. Created reporting tables and views for yearly, geographic, and date-based analysis.
@@ -98,6 +107,7 @@ This project demonstrates how cloud-based analytics tools can be combined to mov
 - [README.md](./README.md): project overview, dashboard summary, and key findings
 - [INSIGHTS_REPORT.md](./INSIGHTS_REPORT.md): detailed interpretation of the dashboard results
 - [GlobalTempGSOT.ipynb](./GlobalTempGSOT.ipynb): notebook used to connect to and inspect BigQuery data
+- [sql/qry_DateTime_AvgTemp.sql](./sql/qry_DateTime_AvgTemp.sql): BigQuery SQL used to prepare time-based temperature analysis
 - `images/`: dashboard screenshots used in the README
 
 ## Conclusion
