@@ -10,6 +10,8 @@ The project also includes [qry_DateTime_AvgTemp.sql](./sql/qry_DateTime_AvgTemp.
 ### Result
 This view combines a bar chart comparing average temperature for India, the United States, and the United Kingdom across selected years with a long-term average temperature trend line.
 
+![Average Temperature by Year and Country](./images/AvgTemp.png)
+
 ### Interpretation and Key Insights
 - India is consistently the warmest of the three countries shown in the comparison chart.
 - The United States remains in the middle range across the selected years.
@@ -22,6 +24,8 @@ This view combines a bar chart comparing average temperature for India, the Unit
 ### Result
 This choropleth world map displays average temperature levels across countries.
 
+![Average Temperature Worldwide](./images/AvgTempMap.png)
+
 ### Interpretation and Key Insights
 - Average temperature varies clearly across world regions.
 - Warmer average temperatures appear more strongly in lower-latitude and tropical areas.
@@ -33,6 +37,8 @@ This choropleth world map displays average temperature levels across countries.
 
 ### Result
 This map shows temperature change (`temp_delta`) by country over the selected 10-year period, with a date filter allowing time-based exploration.
+
+![Global Temperature Change Within 10 Years](./images/AvgTempMap10Year.png)
 
 ### Interpretation and Key Insights
 - Temperature change is visible across many parts of the world.
