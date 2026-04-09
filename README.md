@@ -1,14 +1,14 @@
 # Global Temperature Analysis with BigQuery and Looker Studio
 
 ## Project Overview
-This project explores global temperature patterns using Google BigQuery for data preparation and Looker Studio for interactive visualisation. The analysis focuses on three questions:
+This project explores global temperature patterns using Google BigQuery for data preparation and Looker Studio for interactive visualisation. The dashboard focuses on three core views:
 
-- How does average temperature differ across countries?
-- How has average temperature changed over time?
-- Which parts of the world show stronger recent temperature change?
+- average temperature by year and country
+- average temperature worldwide
+- global temperature change worldwide within 10 years
 
 ## Project Objective
-The goal of this project is to transform raw temperature data into analysis-ready BigQuery tables and views, then use Looker Studio to communicate findings through maps, trend lines, and country comparisons.
+The goal of this project is to transform raw temperature data into analysis-ready BigQuery tables and views, then use Looker Studio to communicate temperature patterns through comparison charts, trend lines, and global maps.
 
 ## Tools and Technologies
 - Google BigQuery
@@ -41,20 +41,26 @@ The dashboard is supported by a set of tables and views created in BigQuery to o
 
 These objects were used to structure the temperature data into reusable reporting layers for Looker Studio.
 
+## Analytical Workflow
+1. Loaded and explored the temperature dataset in Google BigQuery.
+2. Created reporting tables and views for yearly, geographic, and date-based analysis.
+3. Connected the prepared data to Looker Studio.
+4. Built dashboard views to compare countries, show long-term trends, and map worldwide temperature patterns.
+5. Interpreted the results to identify meaningful global temperature insights.
+
 ## Dashboard Views
 
 ### 1. Average Temperature by Year and Country
 ![Average Temperature by Year and Country](https://github.com/user-attachments/assets/993afd1a-85b9-4621-9845-cc51d6dfc1fe)
 
-This dashboard view combines:
-- a country comparison chart for India, the United States, and the United Kingdom
-- a long-term average temperature trend line with an average reference line
+This dashboard view combines a country comparison bar chart for India, the United States, and the United Kingdom with a long-term average temperature trend line and an average reference line.
 
 **What this shows**
 - India remains the warmest of the three compared countries.
 - The United States sits in the middle range.
 - The United Kingdom remains the coolest of the three.
-- The long-term trend suggests more recent years are often above the historical average.
+- The long-term trend line suggests more recent years are often above the historical average.
+- The dashboard allows readers to compare both country-level differences and time-based movement in one place.
 
 ### 2. Average Temperature Worldwide
 ![Average Temperature Worldwide](https://github.com/user-attachments/assets/d4d903e7-c41c-484d-8f13-45c86a132893)
@@ -65,6 +71,7 @@ This choropleth map shows how average temperature varies across countries worldw
 - Average temperature differs significantly by geography.
 - Warmer temperatures appear more strongly in lower-latitude and tropical regions.
 - Cooler average temperatures are more visible in higher-latitude regions.
+- The map gives a clear global view of how unevenly average temperature is distributed.
 
 ### 3. Global Temperature Change Within 10 Years
 ![Global Temperature Change Within 10 Years](https://github.com/user-attachments/assets/ebef0262-0e3b-45bc-8488-7f853dc64129)
@@ -75,6 +82,7 @@ This map highlights temperature change by country over the selected 10-year peri
 - Temperature change is global in scale, but uneven in intensity.
 - Many countries show warming over the selected period.
 - Some regions appear to change more strongly than others.
+- The date filter makes it possible to explore recent change dynamically over time.
 
 ## Key Findings
 - Temperature patterns differ clearly across countries and world regions.
@@ -82,6 +90,9 @@ This map highlights temperature change by country over the selected 10-year peri
 - The long-term average temperature trend suggests a broader warming pattern in more recent years.
 - Geography is a major factor in average temperature variation.
 - Recent temperature change appears widespread, although the size of change differs by country.
+
+## Why This Project Matters
+This project demonstrates how cloud-based analytics tools can be combined to move from raw data to a final interactive report. BigQuery was used to prepare structured analytical data, while Looker Studio was used to turn that data into a readable visual story for non-technical audiences.
 
 ## Repository Contents
 - [README.md](./README.md): project overview, dashboard summary, and key findings
