@@ -29,7 +29,7 @@ Looker Studio dashboard:
 [Open Dashboard](https://lookerstudio.google.com/u/0/reporting/d3b74624-32d4-4b34-b1aa-13e59c88a68a/page/tEnnC)
 
 ## BigQuery Data Preparation
-The dashboard is supported by a set of tables and views created in BigQuery to organise the data for time-based, country-based, and geographic analysis.
+The dashboard is supported by a set of tables and views created in BigQuery by running SQL queries to organise the data for time-based, country-based, and geographic analysis.
 
 ### Tables and Views
 - `iso-country-codes`
@@ -39,12 +39,12 @@ The dashboard is supported by a set of tables and views created in BigQuery to o
 - `tbl_YearlyAvgTemperature`
 - `tbl_YearlyMeanTeamp`
 
-These objects were used to structure the temperature data into reusable reporting layers for Looker Studio.
+These objects were created as part of the BigQuery reporting layer and were used to structure the temperature data into reusable tables and views for Looker Studio.
 
 ### Included SQL File
 - [qry_DateTime_AvgTemp.sql](./sql/qry_DateTime_AvgTemp.sql)
 
-This query creates a date-based temperature dataset by:
+This query is part of the BigQuery dataset build process and creates a date-based temperature table by:
 - calculating average temperature by country and year
 - converting the year into a `DATETIME` field for time-based reporting
 - calculating a baseline temperature by country
@@ -52,7 +52,7 @@ This query creates a date-based temperature dataset by:
 
 ## Analytical Workflow
 1. Loaded and explored the temperature dataset in Google BigQuery.
-2. Created reporting tables and views for yearly, geographic, and date-based analysis.
+2. Ran SQL queries to create reporting tables and views for yearly, geographic, and date-based analysis.
 3. Connected the prepared data to Looker Studio.
 4. Built dashboard views to compare countries, show long-term trends, and map worldwide temperature patterns.
 5. Interpreted the results to identify meaningful global temperature insights.
@@ -101,13 +101,13 @@ This map highlights temperature change by country over the selected 10-year peri
 - Recent temperature change appears widespread, although the size of change differs by country.
 
 ## Why This Project Matters
-This project demonstrates how cloud-based analytics tools can be combined to move from raw data to a final interactive report. BigQuery was used to prepare structured analytical data, while Looker Studio was used to turn that data into a readable visual story for non-technical audiences.
+This project demonstrates how cloud-based analytics tools can be combined to move from raw data to a final interactive report. SQL was used in BigQuery to build the reporting tables and views, and Looker Studio was used to turn that prepared data into a readable visual story for non-technical audiences.
 
 ## Repository Contents
 - [README.md](./README.md): project overview, dashboard summary, and key findings
 - [INSIGHTS_REPORT.md](./INSIGHTS_REPORT.md): detailed interpretation of the dashboard results
 - [GlobalTempGSOT.ipynb](./GlobalTempGSOT.ipynb): notebook used to connect to and inspect BigQuery data
-- [sql/qry_DateTime_AvgTemp.sql](./sql/qry_DateTime_AvgTemp.sql): BigQuery SQL used to prepare time-based temperature analysis
+- [sql/qry_DateTime_AvgTemp.sql](./sql/qry_DateTime_AvgTemp.sql): BigQuery SQL used to create part of the reporting dataset
 - `images/`: dashboard screenshots used in the README
 
 ## Conclusion

@@ -3,7 +3,7 @@
 ## Project Overview
 This report summarises insights from the global temperature dashboard built with Google BigQuery and Looker Studio. The dashboard presents three complementary views: country-level comparison, worldwide average temperature mapping, and global temperature change over a recent 10-year period.
 
-The project also includes a supporting SQL query, [qry_DateTime_AvgTemp.sql](./sql/qry_DateTime_AvgTemp.sql), which prepares year-based temperature records, creates a `DATETIME` field for reporting, and calculates temperature change relative to a country baseline.
+The project also includes [qry_DateTime_AvgTemp.sql](./sql/qry_DateTime_AvgTemp.sql), one of the SQL queries used to build the BigQuery tables and views behind the dashboard. This query prepares year-based temperature records, creates a `DATETIME` field for reporting, and calculates temperature change relative to a country baseline.
 
 ## 1. Average Temperature by Year and Country
 
@@ -49,4 +49,4 @@ This map shows temperature change (`temp_delta`) by country over the selected 10
 - The 10-year change map indicates that recent temperature change is widespread, but not uniform.
 
 ## Conclusion
-This project provides a clear example of how BigQuery and Looker Studio can be used together to turn climate data into a meaningful analytics story. It combines data preparation, visual analysis, and insight communication in a format that is easy for readers to follow on GitHub.
+This project provides a clear example of how SQL, BigQuery, and Looker Studio can be used together to turn climate data into a meaningful analytics story. It combines query-driven table creation, visual analysis, and insight communication in a format that is easy for readers to follow on GitHub.
